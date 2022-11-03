@@ -80,6 +80,13 @@ describe('getNeighbors', () => {
     it('will return neighbors from 0s', () => {
 
         expect(getNeighbors(3, 4, matrix3)).to.have.deep.members([[3, 5], [2, 3]]);
+        // matrix3 = [
+        //     [0,0,1,0,0,1,1],
+        //     [1,1,0,0,1,0,1],
+        //     [0,0,0,1,0,0,1],
+        //     [1,0,1,0,0,1,1],
+        // ]
+
         
         expect(getNeighbors(13, 14, matrix4)).to.have.deep.members([[12, 13], [12, 14], [12, 15], [13, 13], [13, 15], [14, 13], [14, 14], [14, 15]]);
 
